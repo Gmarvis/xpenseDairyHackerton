@@ -40,8 +40,9 @@ const Dashboard = () => {
               </h1>
               <p>Monday 16/11/2023</p>
             </div>
-            <div>
+            <div className="flex justify-center items-center gap-2">
               <p>john doe</p>
+              <div className="h-8 w-8 bg-white items-center rounded-full"></div>
             </div>
           </div>
           <div className="flex gap-5">
