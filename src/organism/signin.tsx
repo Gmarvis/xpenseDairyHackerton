@@ -2,39 +2,32 @@ import Button from "@/atom/Button";
 import Input from "@/atom/input";
 import React, { useState } from "react";
 
-const Signup = () => {
+const Signin = () => {
   const [formdata, setFormdata] = useState();
 
   const handleClick = () => {};
 
   return (
-    <div>
+    <div className="w-[25%] flex flex-col gap-8">
       <div>
-        <Input
-          placeholder="username"
-          name="username"
-          type="text"
-          value="username"
-          className=""
-        />
         <Input
           placeholder="email"
           name="email"
           type="text"
           value="email"
-          className=""
+          className="border-b-4 w-full placeholder:text-gray-400"
         />
         <Input
           placeholder="password"
           name="password"
           type="text"
           value="password"
-          className=""
+          className="border-b-4 w-full placeholder:text-gray-400"
         />
       </div>
       <div>
         <Button
-          label="Sign Me Up"
+          label="Login"
           className="bg-green-600 text-white py-3"
           type="submit"
           onClick={handleClick}
@@ -44,4 +37,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Signin;

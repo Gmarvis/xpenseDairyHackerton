@@ -2,32 +2,39 @@ import Button from "@/atom/Button";
 import Input from "@/atom/input";
 import React, { useState } from "react";
 
-const Signin = () => {
+const Signup = () => {
   const [formdata, setFormdata] = useState();
 
   const handleClick = () => {};
 
   return (
     <div>
-      <div>
+      <div className="w-[25%] ">
+        <Input
+          placeholder="username"
+          name="username"
+          type="text"
+          value="username"
+          className="border-b-4 w-full placeholder:text-gray-400"
+        />
         <Input
           placeholder="email"
           name="email"
           type="text"
           value="email"
-          className="border-b-black"
+          className="border-b-4 w-full placeholder:text-gray-400"
         />
         <Input
           placeholder="password"
           name="password"
           type="text"
           value="password"
-          className=""
+          className="border-b-4 w-full placeholder:text-gray-400"
         />
       </div>
       <div>
         <Button
-          label="Login"
+          label="Sign Me Up"
           className="bg-green-600 text-white py-3"
           type="submit"
           onClick={handleClick}
@@ -37,4 +44,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default Signup;

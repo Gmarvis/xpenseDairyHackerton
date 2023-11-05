@@ -1,10 +1,11 @@
 import React from "react";
-import HomePage from "../homePage";
+import Signupsignin from "@/organism/signupsignin";
 
 const page = () => {
   return (
     <div>
-      <HomePage />
+      <p className="w-full h-[100px] bg-slate-500">poijdoi npo</p>
+      {/* <Signupsignin /> */}
     </div>
   );
 };
