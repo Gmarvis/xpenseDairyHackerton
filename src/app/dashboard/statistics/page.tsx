@@ -4,7 +4,7 @@ const page = () => {
   return (
     <div>
       <div>
-        <h2>enter your expenses here</h2>
+        <h2 className="text-center">statistics</h2>
       </div>
     </div>
   );
